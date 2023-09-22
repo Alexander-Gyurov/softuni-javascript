@@ -1,0 +1,32 @@
+function facesFigures(input){
+    let type = input[0];
+    if(type === "square"){
+        let a = Number(input[1]);
+        let result = a * a;
+        console.log(result.toFixed(3));
+    } else if(type === "rectangle"){
+        let a = Number(input[1]);
+        let b = Number(input[2]);
+        let result = a * b;
+        console.log(result.toFixed(3));
+    } else if(type === "circle"){
+        let r = Number(input[1]);
+        let result = Math.PI * Math.pow(r,2);
+        console.log(result.toFixed(3));
+    } else if(type === "triangle"){
+        let a = Number(input[1]);
+        let h = Number(input[2]);
+        let result = (a*h)/2;
+        console.log(result.toFixed(3));
+    }
+    }
+facesFigures(["square", "5"])
+console.log("---")
+facesFigures(["rectangle", "7", "2.5"])
+console.log("---")
+facesFigures(["circle", "6"])
+console.log("---")
+facesFigures(["triangle", "4.5", "20"])
+
+
+
